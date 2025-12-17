@@ -1,0 +1,17 @@
+{
+  "extensiones_permitidas": ["doc", "docx", "xls", "xlsx", "ppt", "pptx", "txt", "pdf", "jpg", "jpeg", "png"],
+  "tipos_mime_permitidos": [
+    "application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "application/vnd.ms-excel",
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "application/vnd.ms-powerpoint",
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "text/plain",
+    "application/pdf",
+    "image/jpeg",
+    "image/jpg",
+    "image/png"
+  ],
+  "tamano_maximo_bytes": 10485760
+}

@@ -1,0 +1,72 @@
+/* Corrección bug 991px barra lateral */
+@media (max-width: 991.98px) {
+  .sidenav-navbar {
+    display: none !important;
+    width: 0 !important;
+  }
+
+  main.db-content {
+    margin-left: 0 !important;
+  }
+}
+
+
+@media (max-width: 990px) {
+  .db-content {
+    padding-top: 88px !important;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Evitar solapamiento de la barra inferior con el contenido */
+@media (max-width: 991px) {
+  body {
+    padding-bottom: 70px;
+    /* Espacio para la barra inferior móvil */
+  }
+
+  .db-content {
+    margin-bottom: 70px;
+    /* Margen adicional para el contenido principal */
+  }
+}
+
+.icon-image {
+  color: #64748B !important;
+}
+
+.icon-image svg {
+  color: #64748B !important;
+}
+
+/* En pages/common/css/global-custom-stile.css */
+
+#pwa-install-banner {
+    animation: slideDown 0.3s ease-in-out;
+    border-left: 4px solid #007bff;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#pwa-install-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,123,255,0.3);
+}
+
+/* Ocultar banner en PWA instalada */
+@media (display-mode: standalone) {
+    #pwa-install-banner {
+        display: none !important;
+    }
+}

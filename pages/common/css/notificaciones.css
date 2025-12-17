@@ -1,0 +1,43 @@
+/* CSS específico para puntos rojos de notificaciones */
+.punto-rojo-notificacion {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #dc3545 !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    top: 8px !important;
+    right: 8px !important;
+    z-index: 1000 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Asegurar que el contenedor padre tenga position relative */
+.card.position-relative {
+    position: relative !important;
+}
+
+/* Forzar visualización de badges en general */
+.badge.bg-danger.rounded-circle.position-absolute {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 1000 !important;
+}
+
+/* Contador de formularios estilo badge */
+.contador-formulario-notificacion {
+    background-color: #dc3545 !important;
+    color: white !important;
+    position: absolute !important;
+    top: 8px !important;
+    left: 8px !important;
+    z-index: 1000 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    font-size: 0.75rem !important;
+    padding: 0.25em 0.6em !important;
+    border-radius: 10rem !important;
+}

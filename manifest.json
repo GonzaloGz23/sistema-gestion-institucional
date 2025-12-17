@@ -1,0 +1,59 @@
+{
+    "id": "/sistemaInstitucional/",
+    "name": "SIGE",
+    "short_name": "SIGE",
+    "description": "Sistema Interno de Gestión de Empleados",
+    "start_url": "/sistemaInstitucional/index.php",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2A5CAA",
+    "orientation": "portrait-primary",
+    "screenshots": [
+        {
+            "src": "/sistemaInstitucional/dist/assets/images/screenshots/mobile.png",
+            "sizes": "720x1280",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Vista móvil del sistema"
+        },
+        {
+            "src": "/sistemaInstitucional/dist/assets/images/screenshots/desktop.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Vista de escritorio del sistema"
+        }
+    ],
+    "icons": [
+        {
+            "src": "/sistemaInstitucional/dist/assets/images/iconos/app-logo-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/sistemaInstitucional/dist/assets/images/iconos/app-logo-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/sistemaInstitucional/dist/assets/images/iconos/app-logo-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/sistemaInstitucional/dist/assets/images/iconos/app-logo-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "scope": "/sistemaInstitucional/",
+    "categories": [
+        "productivity",
+        "business"
+    ],
+    "lang": "es"
+}
