@@ -1,0 +1,107 @@
+
+@media (max-width: 990px) {
+    .db-content {
+     
+      min-width: 350px; /* Asegura el ancho mínimo también en pantallas pequeñas */
+    }
+  }
+
+/*
+@media (max-width: 990px) {
+  .miCapacitacion  {
+    min-width: 780px;
+  }
+}
+
+
+
+
+
+@media (max-width: 990px) {
+  .crearCapacitacion {
+  
+    min-width: 780px; /* Asegura el ancho mínimo también en pantallas pequeñas */
+ /* }
+}*/
+
+
+/*
+@media (max-width: 990px) {
+  .contenedorN {
+  
+    min-width: 204px; /* Asegura el ancho mínimo también en pantallas pequeñas */
+  /*}
+}*/
+
+
+
+        .mi-select-contenedor {
+            position: relative; /* Necesario para posicionar el select personalizado */
+            width: auto; /* Ajusta el ancho según necesites */
+        }
+
+        .mi-select-custom {
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            padding: 0.375rem 0.75rem;
+            background-color: white;
+            cursor: pointer;
+            overflow: hidden; /* Oculta las opciones que exceden la altura inicial */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .mi-select-custom.open {
+            overflow: visible; /* Muestra todas las opciones al desplegar */
+        }
+
+        .mi-select-options {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            border: 1px solid #ced4da;
+            border-top: none;
+            background-color: white;
+            z-index: 1000; /* Asegura que esté por encima de otros elementos */
+            max-height: calc(1.5em * 6 + 0.75rem * 2); /* Altura para 6 opciones */
+            overflow-y: auto;
+            display: none; /* Oculto inicialmente */
+        }
+
+        .mi-select-custom.open + .mi-select-options {
+            display: block; /* Muestra las opciones al abrir */
+        }
+
+        .mi-select-options .option {
+            padding: 0.375rem 0.75rem;
+            cursor: pointer;
+        }
+
+        .mi-select-options .option:hover {
+            background-color: #f8f9fa;
+        }
+
+
+
+
+
+/* Estilos para hacer el checkbox más grande */
+.checkbox-lg {
+    /* Opción 1: Ajustar width y height */
+    width: 25px; /* Ajusta este valor para el tamaño deseado */
+    height: 25px; /* Ajusta este valor para el tamaño deseado */
+    margin-top: 0; /* Opcional: ajusta si es necesario para la alineación vertical */
+
+    /* Opción 2: Usar transform: scale() (a veces funciona mejor con la apariencia nativa) */
+    /* transform: scale(1.5);  Ajusta el factor de escala (1.5 lo hace 50% más grande) */
+    /* margin: 5px; /* Puede que necesites ajustar el margen si usas scale */
+}
+
+/* Si usas la opción de width/height, puede que necesites ajustar la marca de check */
+/* Esto puede ser más complejo y variar según el navegador */
+/* Por ejemplo, con Bootstrap 5, podrías necesitar sobrescribir estilos específicos */
+/* .form-check-input.checkbox-lg:checked[type="checkbox"] {
+    background-size: 70% 70%; // Ejemplo para ajustar el tamaño de la marca de check
+} */
+

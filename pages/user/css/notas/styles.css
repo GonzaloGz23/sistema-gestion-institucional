@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/*body {
+  margin: 0;
+  padding: 0;
+  background: #FFF9C4; /* Fondo amarillo claro, estilo Google Keep */
+ /* display: flex;
+  justify-content: center;
+}*/
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #5f6368;
+}
+
+form {
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid #1f1e1d;
+  font-size: 16px;
+  background: transparent;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+button {
+  align-self: flex-end;
+  background: #fbbc04;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button .material-icons {
+  font-size: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 98px;
+}
+
+.note {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note h4 {
+  margin-bottom: 10px;
+}
+
+.note p {
+  margin-bottom: 5px;
+}
+
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el ancho mínimo según tus necesidades */
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding: 20px; /* Espacio alrededor de la cuadrícula */
+}
+
+
+.delete-btn {
+  position: relative;
+ 
+
+  cursor: pointer;
+}
+
+
+
+
+
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #fbbc04; /* Mismo color que los inputs */
+  font-size: 16px;
+  background: white;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  appearance: none; /* Oculta el estilo predeterminado del navegador */
+  -webkit-appearance: none; /* Para Safari */
+  -moz-appearance: none; /* Para Firefox */
+}
+
+/* Flecha personalizada para el select */
+select::-ms-expand {
+  display: none; /* Oculta la flecha en IE */
+}
+
+/* Contenedor del select */
+.form-group {
+  position: relative;
+}
+
+/* Agrega un icono de flecha al lado del select */
+.form-group::after {
+
+  font-size: 14px;
+  color: #5f6368;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Efecto al hacer hover o focus */
+select:hover, select:focus {
+  background: #f8f9fa;
+  border-bottom: 2px solid #ff9800; /* Cambio de color al seleccionar */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+  margin-top:4px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+
+
+
+#addCollabBtn {
+  background: #3498db;
+  color: white;
+  margin-top: 10px;
+}
+
+#addCollabBtn:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+#saveCollabBtn {
+  background: #4CAF50;
+  color: white;
+}
+
+#saveCollabBtn:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+.close-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.close-btn:hover {
+  background: #e60000;
+  transform: scale(1.05);
+}
+
+/* Estilo para el select */
+#userSelect {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+}
+
+/* Lista de colaboradores */
+#collaboratorsList {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#collaboratorsList li {
+  background: #f4f4f4;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Botón para eliminar colaborador */
+.remove-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.remove-btn:hover {
+  background: #c0392b;
+}
+
+
+.opciones-trigger {
+  cursor: pointer;
+  color: blue; /* O el color que prefieras */
+}
+
+.botones-container {
+  margin-top: 10px; /* Espacio entre el texto y los botones */
+}
+
+
+
+
+.btn-group.centered-dropdown .dropdown-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content; /* Ajusta el ancho al contenido */
+  min-width: 100%; /* Asegura que no sea más pequeño que el btn-group */
+}
+
+
+.dropdown-menu.bordered-light {
+  border: 2px solid #999; /* Borde gris más oscuro y grueso */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+}
+
+
+
+
+.opciones-adicionales {
+  display: flex; /* Usamos flexbox */
+  justify-content: space-between; /* Alinea los elementos */
+  align-items: center; /* Centra verticalmente */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.puntos-verticales {
+  font-size: 1.5em; /* Ajusta el tamaño según sea necesario */
+  line-height: 1; /* Asegura que los puntos estén centrados verticalmente */
+}
+
+
+
+
+.tooltip .tooltip-inner {
+  color: black; /* Cambia el color del texto a un gris más claro */
+  background-color: #f8f9fa; /* Cambia el color de fondo a un gris muy claro */
+  border: 1px solid #ddd; /* Agrega un borde sutil */
+}
+
+
+
+
+
+
+
+
+
+.rounded-circle-container {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  height: 50px; /* Ajusta el tamaño según sea necesario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Hace que el contenedor sea redondo */
+  background-color: #f0f0f0; /* Opcional: Agrega un color de fondo */
+  border: 1px solid #ccc; /* Opcional: Agrega un borde */
+}
+
+.rounded-circle-container i {
+  font-size: 1.5em; /* Ajusta el tamaño del icono según sea necesario */
+  color: #333; /* Opcional: Cambia el color del icono */
+}
+
+
+
+
+.user-logo {
+  width: 40px; /* Ajusta el tamaño según sea necesario */
+  height: 40px; /* Ajusta el tamaño según sea necesario */
+  border-radius: 50%; /* Hace que el contenedor sea redondo */
+  line-height: 1; /* Asegura que los puntos estén centrados verticalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(15, 9, 9); /* Color del icono */
+  font-size: 2em; /* Tamaño del icono */
+}
+
+.opciones-adicionales {
+  display: flex; /* Permite usar flexbox para alinear el contenido */
+  justify-content: center; /* Alinea el contenido (puntos verticales) a la derecha */
+  align-items: center; /* Alinea el contenido verticalmente al centro */
+  /* Otros estilos que tengas para .opciones-adicionales */
+}
+.btn.btn-light.btn-icon.rounded-circle {
+  display: inline-flex; /* Cambia a inline-flex para adaptar el ancho al contenido */
+  justify-content: center;
+  align-items: center;
+  /* Elimina o ajusta el ancho fijo si lo tienes */
+  width: auto; /* Permite que el ancho se ajuste al contenido */
+}

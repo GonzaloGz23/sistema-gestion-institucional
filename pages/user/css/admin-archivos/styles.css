@@ -1,0 +1,53 @@
+@media (max-width: 990px) {
+    .nuevo {
+      /* Eliminar la altura mínima fija */
+      min-height: auto;
+    }
+    
+    /* Asegurar que el contenido principal tenga scroll pero no las barras */
+    body {
+      overflow: hidden;
+      height: 100vh;
+    }
+    
+    /* El contenedor principal debe tener scroll */
+    .db-content {
+      overflow-y: auto;
+      height: calc(100vh - 150px); /* Altura total menos espacio para barras */
+      position: fixed;
+      top: 88px; /* Altura del navbar */
+      bottom: 70px; /* Altura de la barra inferior */
+      width: 100%;
+      padding-bottom: 0 !important;
+    }
+    
+    /* Asegurar que la barra de navegación esté fija */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1030;
+    }
+    
+    /* Asegurar que la barra inferior esté fija */
+    .bottom-navbar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1030;
+    }
+}
+
+  .db-content {
+    margin-left: 240px;
+    padding: 88px 0px;
+    min-width: 204px; /* Establece el ancho mínimo */
+  }
+  
+  @media (max-width: 990px) {
+    .db-content {
+      margin-left: 0px;
+      padding: 150px 0px;
+      min-width: 204px; /* Asegura el ancho mínimo también en pantallas pequeñas */
+    }
+  }

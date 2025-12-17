@@ -1,0 +1,58 @@
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contenedor-cards .card-acceso {
+    width: 131px;
+    height: 133px;
+}
+
+.contenedor-cards .card-acceso .card-body{
+   padding: 0;
+}
+
+.contenedor-cards .card-acceso h5 {
+    font-size: 1rem;
+    /* Tamaño normal para escritorio */
+}
+
+@media (max-width: 991px) {
+    .contenedor-cards {
+        justify-content: center;
+    }
+
+    .contenedor-cards .card-acceso {
+        width: 140px;
+        /* Reducido para móvil */
+        height: 110px;
+        /* Reducido para móvil */
+    }
+
+    .contenedor-cards .card-acceso h5 {
+        font-size: 0.85rem;
+        /* Texto más pequeño para móvil */
+    }
+
+    .contenedor-cards .card-acceso svg,
+    .contenedor-cards .card-acceso i {
+        width: 40px !important;
+        /* Ajustar iconos SVG */
+        height: 40px !important;
+        /* Ajustar iconos SVG */
+        font-size: 40px !important;
+        /* Ajustar iconos de fuente */
+    }
+}
+
+/* Evitar solapamiento de la barra inferior con el contenido */
+/* @media (max-width: 991px) {
+    body { */
+        /* padding-bottom: 70px; */ /* Espacio para la barra inferior móvil */
+ /*    }
+    
+    .db-content { */
+        /* margin-bottom: 70px; */ /* Margen adicional para el contenido principal */
+/*     }
+} */

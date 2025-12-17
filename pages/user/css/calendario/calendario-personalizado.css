@@ -1,0 +1,116 @@
+/* === Modo claro === */
+[data-bs-theme="light"] .fc .fc-daygrid-day-number {
+  color: #000 !important;
+}
+
+/* === Modo oscuro === */
+[data-bs-theme="dark"] .fc .fc-daygrid-day-number {
+  color: #e6e7ee !important;
+}
+
+.fc-header-toolbar.fc-toolbar.fc-toolbar-ltr {
+  margin-bottom: 0!important;
+}
+
+/* === Selector de color === */
+.color-selector {
+  position: relative;
+}
+
+.color-palette {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--color-bg-palette);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1055;
+  max-width: 240px;
+  min-width: 160px;
+}
+
+.color-palette button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.color-palette button:hover {
+  transform: scale(1.1);
+}
+
+.color-palette button.selected {
+  border: 2px solid white;
+  outline: 2px solid #4285f4;
+}
+
+[data-bs-theme="light"] .color-palette {
+  --color-bg-palette: #ffffff;
+}
+
+[data-bs-theme="dark"] .color-palette {
+  --color-bg-palette: #0b1324;
+}
+
+/* === Eventos en calendario === */
+
+/* Wrap en escritorio */
+@media (min-width: 992px) {
+  .fc .fc-event {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    padding: 2px 4px !important;
+    font-size: 0.85rem;
+  }
+}
+
+/* Solo color en móvil (sin texto) */
+@media (max-width: 991.98px) {
+  .fc .fc-event-main {
+    display: none !important;
+  }
+
+  .fc .fc-event {
+    padding: 0 !important;
+    height: 12px !important;
+    min-height: 12px !important;
+  }
+}
+
+.fc-event {
+  user-select: auto !important;
+}
+
+/* === Contenedor de eventos del día (móvil) === */
+
+#eventosDia {
+  border-left: 4px solid var(--bs-primary);
+  border-radius: 0.5rem;
+  background-color: var(--bs-light);
+  margin-top: 1rem;
+}
+
+#eventosDia h5 {
+  font-size: 1rem;
+}
+
+#eventosDia .list-group-item {
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+}
+
+#eventosDia .list-group-item .fw-semibold {
+  font-size: 0.95rem;
+}
+
+#eventosDia .list-group-item .text-muted {
+  font-size: 0.8rem;
+}

@@ -1,0 +1,13 @@
+@media (max-width: 767px) {
+
+    .dt-length,
+    .dt-search {
+        margin-bottom: 0.75rem !important;
+    }
+
+    .dt-paging {
+        margin-top: 1rem !important;
+        justify-content: center !important;
+        /* centrado opcional */
+    }
+}

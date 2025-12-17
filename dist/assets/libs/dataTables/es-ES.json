@@ -1,0 +1,24 @@
+{
+    "decimal": "",
+    "emptyTable": "No hay ítems disponibles",
+    "info": "Mostrando _START_ a _END_ de _TOTAL_ ítems",
+    "infoEmpty": "Mostrando 0 a 0 de 0 ítems",
+    "infoFiltered": "(filtrado de _MAX_ ítems)",
+    "infoPostFix": "",
+    "thousands": ",",
+    "lengthMenu": "_MENU_ ítems",
+    "loadingRecords": "Cargando...",
+    "processing": "Procesando...",
+    "search": "Buscar:",
+    "zeroRecords": "No se encontraron ítems",
+    "paginate": {
+        "first": "<<",
+        "last": ">>",
+        "next": ">",
+        "previous": "<"
+    },
+    "aria": {
+        "sortAscending": ": activar para ordenar de forma ascendente",
+        "sortDescending": ": activar para ordenar de forma descendente"
+    }
+}
