@@ -217,7 +217,7 @@ Este proyecto se presenta únicamente con fines demostrativos para portafolio pr
 
 ## 📧 Contacto
 
-Para consultas sobre este proyecto, puedes contactarme a través de mi perfil de GitHub.
+gonzaloegomez23@gmail.com
 
 ---
 
