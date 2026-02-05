@@ -132,6 +132,23 @@ El sistema funciona como PWA, permitiendo:
 - Notificaciones push
 - Experiencia similar a una app nativa
 
+### Configuración de Firebase Cloud Messaging
+
+Para habilitar las notificaciones push, es necesario configurar Firebase Cloud Messaging:
+
+1. **Obtener credenciales**: Accede a [Firebase Console](https://console.firebase.google.com/) y crea un proyecto nuevo
+2. **Configurar archivo**: Actualiza el archivo `dist/assets/js/push/firebase-messaging-sw.js` reemplazando los placeholders (`YOUR_API_KEY`, `YOUR_AUTH_DOMAIN`, etc.) con tus credenciales de Firebase
+3. **Archivo de configuración**: La configuración se encuentra en `dist/assets/js/push/firebase-messaging-sw.js`
+
+**Credenciales requeridas**:
+- `apiKey`: Clave de API del proyecto
+- `authDomain`: Dominio de autenticación
+- `projectId`: ID del proyecto
+- `storageBucket`: Bucket de almacenamiento
+- `messagingSenderId`: ID del remitente de mensajes
+- `appId`: ID de aplicación
+- `measurementId`: ID de medición (opcional)
+
 ## 🤝 Contribuciones
 
 Este proyecto fue desarrollado como parte de mi trabajo en una entidad pública. El código ha sido sanitizado para uso en portafolio, eliminando información sensible.
