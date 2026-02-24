@@ -1036,7 +1036,7 @@ async function openAddCapacitacionModal(capacitacionId) {
                                         <label for="formFile-${noteCapacitacionId}" class="form-label">Materiales</label>
                                         <div id="materiales-actuales-${note.id_capacitacion}">
                                             ${note.materiales.map((material, index) => {
-                                                const fullPublicFilePath = `${window.location.origin}/sistemaInstitucional/uploads/capacitacion/${material.nombre_material}`;
+                                                const fullPublicFilePath = `${window.location.origin}/sistema-gestion-institucional/uploads/capacitacion/${material.nombre_material}`;
   const googleViewerUrl = `https://docs.google.com/viewer?url=${encodeURIComponent(fullPublicFilePath)}&embedded=true`;
   const previewLinkBase = `../../uploads/capacitacion/${material.nombre_material}`;
   const downloadLink = `../../uploads/capacitacion/${material.nombre_material}`;

@@ -91,8 +91,8 @@ function verificarProblemasSesion() {
     }
     
     // Verificar path de la cookie
-    if ($cookieInfo['existe'] && $cookieInfo['path'] != '/sistemaInstitucional/') {
-        $problemas[] = 'El path de la cookie (' . $cookieInfo['path'] . ') no coincide con el configurado (/sistemaInstitucional/)';
+    if ($cookieInfo['existe'] && $cookieInfo['path'] != '/sistema-gestion-institucional/') {
+        $problemas[] = 'El path de la cookie (' . $cookieInfo['path'] . ') no coincide con el configurado (/sistema-gestion-institucional/)';
     }
     
     // Verificar si hay cabeceras que puedan estar afectando
@@ -251,7 +251,7 @@ $problemas = verificarProblemasSesion();
             <p>Entidad: <span class="info"><?php echo $usuario['id_entidad']; ?></span></p>
         <?php else: ?>
             <p class="error">❌ No hay usuario autenticado</p>
-            <p>Para probar con un usuario autenticado, primero debes <a href="/sistemaInstitucional/pages/login/login.php">iniciar sesión</a>.</p>
+            <p>Para probar con un usuario autenticado, primero debes <a href="/sistema-gestion-institucional/pages/login/login.php">iniciar sesión</a>.</p>
         <?php endif; ?>
     </div>
     
@@ -274,8 +274,8 @@ $problemas = verificarProblemasSesion();
     </div>
     
     <div style="margin-top: 30px;">
-        <a href="/sistemaInstitucional/pages/login/login.php">Ir a Login</a> | 
-        <a href="/sistemaInstitucional/backend/controller/auth/logout.php">Cerrar Sesión</a> |
+        <a href="/sistema-gestion-institucional/pages/login/login.php">Ir a Login</a> | 
+        <a href="/sistema-gestion-institucional/backend/controller/auth/logout.php">Cerrar Sesión</a> |
         <a href="<?php echo $_SERVER['PHP_SELF']; ?>">Actualizar</a>
     </div>
 </body>

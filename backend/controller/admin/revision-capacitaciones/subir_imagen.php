@@ -194,7 +194,7 @@ try {
     chmod($rutaCompleta, 0644);
 
     // Generar URL relativa para la base de datos
-    // $imagenUrl = '/sistemaInstitucional/images/training/' . $nombreFinal;
+    // $imagenUrl = '/sistema-gestion-institucional/images/training/' . $nombreFinal;
     $imagenUrl = $nombreFinal;
 
     // Actualizar la base de datos

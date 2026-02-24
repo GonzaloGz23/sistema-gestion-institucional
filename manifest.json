@@ -1,23 +1,23 @@
 {
-    "id": "/sistemaInstitucional/",
+    "id": "/sistema-gestion-institucional/",
     "name": "SIGE",
     "short_name": "SIGE",
     "description": "Sistema Interno de Gestión de Empleados",
-    "start_url": "/sistemaInstitucional/index.php",
+    "start_url": "/sistema-gestion-institucional/index.php",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#2A5CAA",
     "orientation": "portrait-primary",
     "screenshots": [
         {
-            "src": "/sistemaInstitucional/dist/assets/images/screenshots/mobile.png",
+            "src": "/sistema-gestion-institucional/dist/assets/images/screenshots/mobile.png",
             "sizes": "720x1280",
             "type": "image/png",
             "form_factor": "narrow",
             "label": "Vista móvil del sistema"
         },
         {
-            "src": "/sistemaInstitucional/dist/assets/images/screenshots/desktop.png",
+            "src": "/sistema-gestion-institucional/dist/assets/images/screenshots/desktop.png",
             "sizes": "1280x720",
             "type": "image/png",
             "form_factor": "wide",
@@ -26,31 +26,31 @@
     ],
     "icons": [
         {
-            "src": "/sistemaInstitucional/dist/assets/images/iconos/app-logo-192.png",
+            "src": "/sistema-gestion-institucional/dist/assets/images/iconos/app-logo-192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/sistemaInstitucional/dist/assets/images/iconos/app-logo-512.png",
+            "src": "/sistema-gestion-institucional/dist/assets/images/iconos/app-logo-512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "/sistemaInstitucional/dist/assets/images/iconos/app-logo-192.png",
+            "src": "/sistema-gestion-institucional/dist/assets/images/iconos/app-logo-192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "/sistemaInstitucional/dist/assets/images/iconos/app-logo-512.png",
+            "src": "/sistema-gestion-institucional/dist/assets/images/iconos/app-logo-512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
         }
     ],
-    "scope": "/sistemaInstitucional/",
+    "scope": "/sistema-gestion-institucional/",
     "categories": [
         "productivity",
         "business"

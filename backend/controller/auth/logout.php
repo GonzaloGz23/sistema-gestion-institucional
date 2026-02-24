@@ -1,9 +1,9 @@
 <?php
 // Incluir configuración centralizada de sesiones
-require_once '../../config/session_config.php';
+require_once "../../config/session_config.php";
 
 // Eliminar todas las variables de sesión
-$_SESSION = array();
+$_SESSION = [];
 
 // Si hay una cookie de sesión, eliminarla
 if (isset($_COOKIE[session_name()])) {
@@ -12,12 +12,12 @@ if (isset($_COOKIE[session_name()])) {
     // Usar los mismos parámetros que en session_config.php
     setcookie(
         session_name(),
-        '',
+        "",
         time() - 3600,
-        $params['path'],
-        $params['domain'],
-        $params['secure'],
-        $params['httponly']
+        $params["path"],
+        $params["domain"],
+        $params["secure"],
+        $params["httponly"],
     );
 }
 
@@ -25,6 +25,6 @@ if (isset($_COOKIE[session_name()])) {
 session_destroy();
 
 // Redirigir al login (ajustar la ruta según tu proyecto)
-header("Location: /sistemaInstitucional/pages/login/login.php");
-exit;
+header("Location: /sistema-gestion-institucional/pages/login/login.php");
+exit();
 ?>

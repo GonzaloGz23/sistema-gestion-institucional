@@ -153,7 +153,7 @@
         text: 'No tenés permiso para acceder a esta sección.',
         confirmButtonText: 'Entendido'
       }).then(() => {
-        window.location.href = '/sistemainstitucional/pages/admin/';
+        window.location.href = '/sistema-gestion-institucional/pages/admin/';
       });
     }
 
@@ -215,7 +215,7 @@
       try {
 
         // Registrar SW antes de cualquier cosa
-        const registration = await getServiceWorkerByUrl(`${window.location.origin}/sistemaInstitucional/sw.js`);
+        const registration = await getServiceWorkerByUrl(`${window.location.origin}/sistema-gestion-institucional/sw.js`);
         console.log("SW registrado:", registration);
         if (!registration) {
           console.warn("❌ No se encontró el Service Worker esperado");
@@ -237,7 +237,7 @@
           }
         });
         // Enviar token a backend
-        const response = await fetch(`${window.location.origin}/sistemaInstitucional/pages/common/addDevice.php?deviceid=` + currentToken, {
+        const response = await fetch(`${window.location.origin}/sistema-gestion-institucional/pages/common/addDevice.php?deviceid=` + currentToken, {
           headers: {
             'Content-Type': 'application/json'
           },

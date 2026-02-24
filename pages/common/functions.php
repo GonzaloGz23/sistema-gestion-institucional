@@ -82,7 +82,7 @@ function testConnectGoogleFirebase($pdo)
 function sendNotificacions($array, $pdo)
 {
     $result = testConnectGoogleFirebase($pdo);
-    $ch = curl_init("https://fcm.googleapis.com/v1/projects/sistemainstitucional-7f982/messages:send");
+    $ch = curl_init("https://fcm.googleapis.com/v1/projects/sistema-gestion-institucional-7f982/messages:send");
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
         'Content-Type: application/json',
         'Authorization: Bearer ' . $result['access_token']

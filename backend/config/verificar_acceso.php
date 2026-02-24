@@ -1,16 +1,21 @@
 <?php
 // Incluir configuración centralizada de sesiones
-require_once __DIR__ . '/session_config.php';
+require_once __DIR__ . "/session_config.php";
 
 // Rutas que no requieren validación de acceso
-$rutasPublicas = ['login.php', 'index.php', 'activacion.php', 'creacionEntidad.php'];
+$rutasPublicas = [
+    "login.php",
+    "index.php",
+    "activacion.php",
+    "creacionEntidad.php",
+];
 
 // Obtener nombre del archivo actual
-$archivoActual = basename($_SERVER['PHP_SELF']);
+$archivoActual = basename($_SERVER["PHP_SELF"]);
 
 // Obtener módulos permitidos por sesión usando función helper
 $datosUsuario = obtenerUsuarioActual();
-$modulosPermitidos = $datosUsuario['modulos_permitidos'] ?? [];
+$modulosPermitidos = $datosUsuario["modulos_permitidos"] ?? [];
 
 $permitido = false;
 
@@ -38,10 +43,10 @@ if (!$permitido) {
                 text: 'No tenés permiso para acceder a esta página.',
                 confirmButtonText: 'Entendido'
             }).then(() => {
-                window.location.href = '/sistemaInstitucional/pages/index.php';
+                window.location.href = '/sistema-gestion-institucional/pages/index.php';
             });
         });
     </script>
     ";
-    exit;
+    exit();
 }

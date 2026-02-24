@@ -9,7 +9,7 @@ self.addEventListener("push", (event) => {
     : 'https://example.com';
   
   // Todas las notificaciones van a la página principal del sistema
-  const targetUrl = `${baseUrl}/sistemaInstitucional/pages/index.php`;
+  const targetUrl = `${baseUrl}/sistema-gestion-institucional/pages/index.php`;
   
   event.waitUntil(self.registration.showNotification(notif.title, {
     body: notif.body,
@@ -38,7 +38,7 @@ self.addEventListener("notificationclick", (event) => {
         
         // Si encontramos una ventana del mismo dominio y path base
         if (clientUrl.hostname === targetUrlObj.hostname && 
-            client.url.includes('/sistemaInstitucional/')) {
+            client.url.includes('/sistema-gestion-institucional/')) {
           
           // Si la ventana ya está en la URL objetivo, solo enfocarla
           if (client.url === targetUrl) {

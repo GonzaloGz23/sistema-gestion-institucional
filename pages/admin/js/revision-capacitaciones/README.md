@@ -356,7 +356,7 @@ cerrado      → cerrado (anteriormente "finalizado")
 
 ### URL del Módulo
 ```
-/sistemaInstitucional/pages/admin/revisionCapacitaciones.php
+/sistema-gestion-institucional/pages/admin/revisionCapacitaciones.php
 ```
 
 ### Estructura de Archivos Actualizada

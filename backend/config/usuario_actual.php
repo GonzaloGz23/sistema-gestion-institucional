@@ -1,11 +1,11 @@
 <?php
 // Incluir configuración centralizada de sesiones
-require_once __DIR__ . '/session_config.php';
+require_once __DIR__ . "/session_config.php";
 
 // Verificar que el usuario esté logueado
 if (!verificarUsuarioAutenticado()) {
-    header("Location: /sistemaInstitucional/pages/login/login.php");
-    exit;
+    header("Location: /sistema-gestion-institucional/pages/login/login.php");
+    exit();
 }
 
 // Convertir la sesión del usuario en objeto usando función helper

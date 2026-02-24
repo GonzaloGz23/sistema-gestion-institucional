@@ -322,7 +322,7 @@
                                                 <div class="text-center mb-3">
                                                     <img id="imagenCurso" src="../../images/default-course.webp"
                                                         class="img-fluid rounded shadow" alt="Imagen del curso" style="max-height: 200px;"
-                                                        onerror="this.src='/sistemaInstitucional/images/default-course.webp';">
+                                                        onerror="this.src='/sistema-gestion-institucional/images/default-course.webp';">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label class="form-label fw-semibold">Cargar nueva imagen:</label>

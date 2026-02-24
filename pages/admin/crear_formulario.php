@@ -4,7 +4,7 @@ require_once '../../backend/config/session_config.php';
 
 // Verificar autenticación
 if (!verificarUsuarioAutenticado()) {
-    header("Location: /sistemaInstitucional/pages/login/login.php");
+    header("Location: /sistema-gestion-institucional/pages/login/login.php");
     exit;
 }
 ?>

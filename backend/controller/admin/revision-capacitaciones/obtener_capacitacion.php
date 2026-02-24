@@ -189,7 +189,7 @@ try {
     // Procesar imagen - usar directamente la ruta de la BD
     $imagenUrl = !empty($capacitacion['ruta_imagen']) 
         ? $capacitacion['ruta_imagen']
-        : '/sistemaInstitucional/images/default-course.webp';
+        : '/sistema-gestion-institucional/images/default-course.webp';
     
     // Obtener link de inscripción desde la base de datos
     $linkInscripcion = $capacitacion['link'] ?? '';

@@ -395,7 +395,7 @@ WHERE equipos.id_entidad = ?
 
 Ejemplo:
 - ✅ Correcto: `123-20251104_143025-curso_php.jpg`
-- ❌ Incorrecto: `/sistemaInstitucional/images/training/123-20251104_143025-curso_php.jpg`
+- ❌ Incorrecto: `/sistema-gestion-institucional/images/training/123-20251104_143025-curso_php.jpg`
 
 La ruta completa se construye en el frontend según necesidad.
 
@@ -495,19 +495,19 @@ try {
 
 #### 1. Listar Capacitaciones
 ```bash
-curl -X GET "http://localhost/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/listar_capacitaciones.php" \
+curl -X GET "http://localhost/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/listar_capacitaciones.php" \
   -H "Cookie: PHPSESSID=tu_session_id"
 ```
 
 #### 2. Obtener Capacitación
 ```bash
-curl -X GET "http://localhost/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/obtener_capacitacion.php?id=123" \
+curl -X GET "http://localhost/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/obtener_capacitacion.php?id=123" \
   -H "Cookie: PHPSESSID=tu_session_id"
 ```
 
 #### 3. Editar Capacitación
 ```bash
-curl -X POST "http://localhost/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/editar_capacitacion.php" \
+curl -X POST "http://localhost/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/editar_capacitacion.php" \
   -H "Content-Type: application/json" \
   -H "Cookie: PHPSESSID=tu_session_id" \
   -d '{"id_capacitacion": 123, "nombre": "Nuevo nombre", ...}'
@@ -515,7 +515,7 @@ curl -X POST "http://localhost/sistemaInstitucional/backend/controller/admin/rev
 
 #### 4. Cambiar Estado
 ```bash
-curl -X POST "http://localhost/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/cambiar_estado.php" \
+curl -X POST "http://localhost/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/cambiar_estado.php" \
   -H "Content-Type: application/json" \
   -H "Cookie: PHPSESSID=tu_session_id" \
   -d '{"id_capacitacion": 123, "nuevo_estado": "en_revision"}'
@@ -523,7 +523,7 @@ curl -X POST "http://localhost/sistemaInstitucional/backend/controller/admin/rev
 
 #### 5. Subir Imagen
 ```bash
-curl -X POST "http://localhost/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/subir_imagen.php" \
+curl -X POST "http://localhost/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/subir_imagen.php" \
   -H "Cookie: PHPSESSID=tu_session_id" \
   -F "id_capacitacion=123" \
   -F "imagen=@/ruta/a/imagen.jpg"
@@ -564,8 +564,8 @@ post_max_size = 3M
 
 **Permisos del directorio:**
 ```bash
-chmod 755 /opt/lampp/htdocs/sistemaInstitucional/images/training/
-chown daemon:daemon /opt/lampp/htdocs/sistemaInstitucional/images/training/
+chmod 755 /opt/lampp/htdocs/sistema-gestion-institucional/images/training/
+chown daemon:daemon /opt/lampp/htdocs/sistema-gestion-institucional/images/training/
 ```
 
 ---

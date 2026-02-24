@@ -4,9 +4,9 @@ const CACHE_NAME = 'sistema-institucional-minimal-v1';
 const DEBUG = false; // Cambiar a false en producción
 // Solo recursos críticos para que la PWA funcione
 const CRITICAL_RESOURCES = [
-  '/sistemaInstitucional/manifest.json',
-  '/sistemaInstitucional/dist/assets/images/iconos/app-logo-192.png',
-  '/sistemaInstitucional/dist/assets/images/iconos/app-logo-512.png'
+  '/sistema-gestion-institucional/manifest.json',
+  '/sistema-gestion-institucional/dist/assets/images/iconos/app-logo-192.png',
+  '/sistema-gestion-institucional/dist/assets/images/iconos/app-logo-512.png'
 ];
 
 // Recursos estáticos básicos que SÍ podemos cachear (carpetas completas)
@@ -197,7 +197,7 @@ self.addEventListener("push", (event) => {
     : 'https://example.com';
 
   // Todas las notificaciones van a la página principal del sistema
-  const targetUrl = `${baseUrl}/sistemaInstitucional/pages/index.php`;
+  const targetUrl = `${baseUrl}/sistema-gestion-institucional/pages/index.php`;
 
   event.waitUntil(self.registration.showNotification(notif.title, {
     body: notif.body,
@@ -226,7 +226,7 @@ self.addEventListener("notificationclick", (event) => {
 
         // Si encontramos una ventana del mismo dominio y path base
         if (clientUrl.hostname === targetUrlObj.hostname &&
-          client.url.includes('/sistemaInstitucional/')) {
+          client.url.includes('/sistema-gestion-institucional/')) {
 
           // Si la ventana ya está en la URL objetivo, solo enfocarla
           if (client.url === targetUrl) {

@@ -556,7 +556,7 @@ const eliminar_cap = async (id_cap) => {
 
     try {
         // Enviar al backend
-        const respuesta = await fetch("/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/eliminar_capacitacion.php", {
+        const respuesta = await fetch("/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/eliminar_capacitacion.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -1401,7 +1401,7 @@ const subirImagenCapacitacion = async (idCapacitacion, archivo) => {
         formData.append('imagen', archivo);
 
         // Enviar al servidor
-        const response = await fetch('/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/subir_imagen.php', {
+        const response = await fetch('/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/subir_imagen.php', {
             method: 'POST',
             credentials: 'same-origin',
             body: formData // NO enviar Content-Type header, FormData lo maneja automáticamente
@@ -2133,7 +2133,7 @@ const hiddenBeforeCreate = (obj) => {
             var datos_enviar = obtenerCategorias("categoria")
             console.log("📤 Enviando datos:", datos_enviar["categoria"])
 
-            fetch('/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/insert_capacitacion.php', {
+            fetch('/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/insert_capacitacion.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -2232,7 +2232,7 @@ async function agregarProfesor() {
         formData.append('dni', dni);
         formData.append('genero', genero);
         // Enviar al servidor
-        const response = await fetch('/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/insert_profesores.php', {
+        const response = await fetch('/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/insert_profesores.php', {
             method: 'POST',
             credentials: 'same-origin',
             body: formData // NO enviar Content-Type header, FormData lo maneja automáticamente
@@ -2273,7 +2273,7 @@ async function listar_profesores() {
         formData.append('capacitacion_id', idCapacitacion);
 
         const response = await fetch(
-            '/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/listar_profesores.php',
+            '/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/listar_profesores.php',
             {
                 method: 'POST',
                 credentials: 'same-origin',
@@ -2323,7 +2323,7 @@ async function eliminarProfesor(id_asign, boton) {
         formData.append("id_asignacion", id_asign);
 
         const response = await fetch(
-            '/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/eliminar_profesor.php',
+            '/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/eliminar_profesor.php',
             {
                 method: "POST",
                 credentials: "same-origin",
@@ -2387,7 +2387,7 @@ $("#genero-profesor").change(async function () {
         formData.append('dni', $("#dni-profesor").val());
         formData.append('genero', $(this).val());
 
-        const response = await fetch('/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/verificar_profesor.php', {
+        const response = await fetch('/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/verificar_profesor.php', {
             method: 'POST',
             credentials: 'same-origin',
             body: formData // NO enviar Content-Type header, FormData lo maneja automáticamente

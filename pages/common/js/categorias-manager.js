@@ -34,9 +34,9 @@ class CategoriasManager {
                 subcategoria: '#subcategoria'
             },
             endpoints: {
-                generales: '/sistemaInstitucional/backend/controller/admin/categorias/obtener_generales.php',
-                especificas: '/sistemaInstitucional/backend/controller/admin/categorias/obtener_especificas.php',
-                subcategorias: '/sistemaInstitucional/backend/controller/admin/categorias/obtener_subcategorias.php'
+                generales: '/sistema-gestion-institucional/backend/controller/admin/categorias/obtener_generales.php',
+                especificas: '/sistema-gestion-institucional/backend/controller/admin/categorias/obtener_especificas.php',
+                subcategorias: '/sistema-gestion-institucional/backend/controller/admin/categorias/obtener_subcategorias.php'
             },
             textos: {
                 seleccionar: 'Seleccione una opción',

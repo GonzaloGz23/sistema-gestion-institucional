@@ -204,7 +204,7 @@ async function loadnuevaCapacitacion() {
   // Bloque de materiales comentado en el original
         note.materiales.forEach((material, index) => {
 
-            const fullPublicFilePath2 = `${window.location.origin}/sistemaInstitucional/uploads/capacitacion/${material.nombre_material}`;
+            const fullPublicFilePath2 = `${window.location.origin}/sistema-gestion-institucional/uploads/capacitacion/${material.nombre_material}`;
             const googleViewerUrl2 = `https://docs.google.com/viewer?url=${encodeURIComponent(fullPublicFilePath2)}&embedded=true`;
 
             const previewLinkBase2 = `../../uploads/capacitacion/${material.nombre_material}`;
@@ -390,7 +390,7 @@ async function loadfinalizadaCapacitacion() {
         // Bloque de materiales comentado en el original
         const xxmaterialesContainer = xxzznoteElement.querySelector(`#materiales-${note.id_capacitacion}`); // Get the container inside this specific noteElement
         note.materiales.forEach((material, index) => {
-            const fullPublicFilePath3 = `${window.location.origin}/sistemaInstitucional/uploads/capacitacion/${material.nombre_material}`;
+            const fullPublicFilePath3 = `${window.location.origin}/sistema-gestion-institucional/uploads/capacitacion/${material.nombre_material}`;
             const googleViewerUrl3 = `https://docs.google.com/viewer?url=${encodeURIComponent(fullPublicFilePath3)}&embedded=true`;
 
             const previewLinkBase3 = `../../uploads/capacitacion/${material.nombre_material}`;

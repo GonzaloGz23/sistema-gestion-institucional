@@ -329,7 +329,7 @@ const mostrarDetalle = async (card) => {
                 if (Array.isArray(m.archivos) && m.archivos.length > 0) {
                     m.archivos.forEach(archivo => {
                         const link = document.createElement('a');
-                        link.href = `/sistemaInstitucional/uploads/${archivo.ruta}`;
+                        link.href = `/sistema-gestion-institucional/uploads/${archivo.ruta}`;
                         link.textContent = `📎 ${archivo.nombre}`;
                         link.target = '_blank';
                         link.className = `small text-decoration-underline d-block mt-1 ${m.es_mio ? 'text-white' : 'text-dark'}`;
@@ -471,7 +471,7 @@ const renderizarMensaje = (msg) => {
     if (Array.isArray(msg.archivos) && msg.archivos.length > 0) {
         msg.archivos.forEach(archivo => {
             const link = document.createElement('a');
-            link.href = `/sistemaInstitucional/uploads/${archivo.ruta_archivo}`;
+            link.href = `/sistema-gestion-institucional/uploads/${archivo.ruta_archivo}`;
             link.textContent = `📎 ${archivo.nombre_original}`;
             link.target = '_blank';
             link.className = `small text-decoration-underline d-block mt-1 ${msg.es_mio ? 'text-white' : 'text-dark'}`;
@@ -634,7 +634,7 @@ document.getElementById('formRespuesta')?.addEventListener('submit', async e => 
                 // AGREGA los archivos reales con enlaces funcionales
                 respuesta.archivos.forEach(archivo => {
                     const link = document.createElement('a');
-                    link.href = `/sistemaInstitucional/uploads/${archivo.ruta}`; // ENLACE real al archivo
+                    link.href = `/sistema-gestion-institucional/uploads/${archivo.ruta}`; // ENLACE real al archivo
                     link.textContent = `📎 ${archivo.nombre}`;
                     link.target = '_blank'; // ABRE en nueva pestaña
                     link.className = 'small text-decoration-underline d-block mt-1 text-white';

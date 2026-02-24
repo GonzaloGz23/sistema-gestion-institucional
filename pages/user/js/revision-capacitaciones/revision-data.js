@@ -62,7 +62,7 @@ const cargarCapacitaciones = async () => {
     try {
         // console.log('🔄 Solicitando lista de capacitaciones del servidor...');
         
-        const response = await fetch('/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/listar_capacitaciones.php', {
+        const response = await fetch('/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/listar_capacitaciones.php', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -125,7 +125,7 @@ const obtenerCapacitacion = async (id) => {
     try {
         // console.log(`🔄 Obteniendo detalles de capacitación ID: ${id}...`);
         
-        const response = await fetch(`/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/obtener_capacitacion.php?id=${id}`, {
+        const response = await fetch(`/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/obtener_capacitacion.php?id=${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -214,7 +214,7 @@ const guardarCapacitacion = async (id, datos) => {
     try {
         console.log('📡 Enviando datos al backend:', datos);
         
-        const response = await fetch('/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/editar_capacitacion.php', {
+        const response = await fetch('/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/editar_capacitacion.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -248,7 +248,7 @@ const guardarCapacitacion = async (id, datos) => {
 // Cambiar estado de capacitación (IMPLEMENTADO - BACKEND REAL)
 const cambiarEstadoCapacitacion = async (id, nuevoEstado) => {
     try {
-        const response = await fetch('/sistemaInstitucional/backend/controller/admin/revision-capacitaciones/cambiar_estado.php', {
+        const response = await fetch('/sistema-gestion-institucional/backend/controller/admin/revision-capacitaciones/cambiar_estado.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

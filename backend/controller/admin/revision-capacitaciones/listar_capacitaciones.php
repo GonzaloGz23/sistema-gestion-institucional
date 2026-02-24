@@ -135,7 +135,7 @@ try {
         
         // Procesar imagen
         $imagenUrl = !empty($capacitacion['imagen']) 
-            ? '/sistemaInstitucional/assets/images/cursos/' . $capacitacion['imagen']
+            ? '/sistema-gestion-institucional/assets/images/cursos/' . $capacitacion['imagen']
             : 'https://via.placeholder.com/300x200?text=Sin+Imagen';
         
         $capacitacionesProcesadas[] = [
